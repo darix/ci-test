@@ -1,0 +1,11 @@
+# @darix Hugo (extended) + Node
+image: registry.opensuse.org/home/darix/apps/containers/hugo:latest
+
+variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+
+deploy:
+    script:
+        - hugo version
+    only:
+        - master
